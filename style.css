@@ -1,0 +1,96 @@
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(to bottom, #0a0a0a, #1f1f1f)
+}
+.container{
+    background: linear-gradient(to top,  #0a0a0a, #272727);
+    border-radius: 1.5rem;
+    color:white;
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px (153, 153, 153, 1);
+}
+
+.display{
+    min-height: 200px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align:right;
+    flex: 1 1 0%;
+}
+
+.display #input{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.display #output{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    overflow:auto;
+    margin-bottom: 1.5rem;
+}
+
+.display .operator{
+    color :EB6666;
+}
+
+.display .brackets, .display .percent{
+    color: #26FED7;
+}
+
+
+.keys {
+
+    background-color: #2b2b2b;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow:  0px -2px 16px  rgba(0,0,0,0.2);
+}
+
+.keys > div{
+    background-color:#242424;
+    padding: 20px;
+    margin: 5px;
+    display:flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.button{
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor:pointer;
+}
+#equal{
+    background-color: #5555ff;
+    color:white;
+}
+
+.keys .key span
+{
+    font-size: 1.5rem;
+    font-weight: 700px;
+}
+.keys .key.action span{
+    color: #26FED7;
+}
+.keys .key.operator span{
+    color: #EB6666;
+}
+.keys .key:hover{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    
+}
+
